@@ -73,7 +73,8 @@
         padding: 20px;
         border-radius: 10px;
         transform: 0.3s;
-        transform: rotate(360deg);
+        transform: rotate(270deg);
+        transform-origin: left;
         background-color: green;
 
         /* height: 40px;
@@ -98,12 +99,14 @@
     </style>
   </head>
   <body>
-    <a class="menu-trigger" href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
+    <div id="ham">
+      <a class="menu-trigger" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
   </body>
   <script>
     const menuTrigger = document.querySelector(".menu-trigger");
