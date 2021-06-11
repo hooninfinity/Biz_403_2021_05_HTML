@@ -14,12 +14,6 @@
     height: 0vh;
     transition: height 0.8s ease-out;
   }
-  nav#main_nav li {
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: white;
-  }
 
   nav#dot_nav {
     display: none;

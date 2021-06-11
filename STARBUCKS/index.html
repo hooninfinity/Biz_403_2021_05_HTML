@@ -10,6 +10,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        transition: 1s;
       }
       header {
         position: fixed;
@@ -31,6 +32,8 @@
     </style>
     <link href="css/main_nav.css" rel="stylesheet" />
     <link href="css/hambuger.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
+    <!-- <link href="css/media_nav.css" rel="stylesheet" /> -->
   </head>
   <body>
     <header>
@@ -46,45 +49,24 @@
           </a>
         </div>
         <ul>
-          <li type="button" onclick="location.href='index.html'">HOME</li>
-          <li>달력</li>
-          <li>CUSTOM</li>
-          <li>자유게시판</li>
-          <li>로그인</li>
-          <li>회원가입</li>
+          <li class="art1 active">HOME</li>
+          <li class="art2">달력</li>
+          <li class="art3">CUSTOM</li>
+          <li class="art4">자유게시판</li>
+          <li class="art5">로그인</li>
+          <li class="art6">회원가입</li>
         </ul>
       </nav>
     </header>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>햄버거 버튼 삽입중</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
-    <h1>상단 네비바 고정완료</h1>
+    <section id="contents">
+      <article id="art1">HOME</article>
+      <article id="art2">달력</article>
+      <article id="art3">CUSTOM</article>
+      <article id="art4">자유게시판</article>
+      <article id="art5">로그인</article>
+      <article id="art6">회원가입</article>
+    </section>
   </body>
-  <script>
-    const menuTrigger = document.querySelector(".menu-trigger");
-
-    menuTrigger.addEventListener("click", (event) => {
-      event.currentTarget.classList.toggle("active-1");
-    });
-  </script>
+  <script src="js/hambuger.js"></script>
+  <script src="js/main_nav.js"></script>
 </html>
